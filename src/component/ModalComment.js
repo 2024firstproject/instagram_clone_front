@@ -18,20 +18,20 @@ function Comment(props) {
     };
 
     return (
-        <div className="commentContainer">
-            <ul className="comment_ul_1">
+        <div className="modalcommentContainer">
+            <ul className="modalcomment_ul_1">
                 {commentArray.map((commentObj, index) => (
                     <li key={index}>{`${commentObj.name}: ${commentObj.text}`}</li> // 사용자 이름과 댓글 내용을 함께 표시
                 ))}
             </ul>
-            <form className="commentWrap" onSubmit={onSubmit}>
+            <form className="modalcommentWrap" onSubmit={onSubmit}>
                 <input
                     type="text"
                     placeholder="댓글달기…"
                     value={comment}
                     onChange={onChange}
                 />
-                <button type="submit" className="commentBtn">enter</button>
+                <button type="submit" className="modalcommentBtn">enter</button>
             </form>
         </div>
     );

@@ -1,0 +1,68 @@
+.modalcommentContainer {
+    
+    position: absolute;
+    width: 280px;
+    height: 51px;
+    left: 595px;
+    top: 500px;
+    
+    
+    }
+    
+    /* 댓글 리스트 스타일 */
+    .modalcomment_ul_1 {
+        position: absolute;
+        top: -200px;
+        left:60px;
+        height:150px;
+        width: 250px;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        overflow:scroll;
+    }
+    
+    .modalcomment_ul_1 li {
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    
+    /* 댓글 입력 폼 스타일 */
+    .modalcommentWrap {
+        z-index:1;
+        display: flex;
+        border-top: 1px solid #dbdbdb;
+        padding-top: 10px;
+    }
+    
+    .modalcommentWrap input[type="text"] {
+        flex-grow: 1;
+        border: none;
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .modalcommentWrap input[type="text"]:focus {
+        outline: none;
+    }
+    
+    .modalcommentBtn {
+        background: transparent;
+        border: none;
+        color: #3897f0;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .modalcommentBtn:disabled {
+        opacity: 0.3;
+    }
+    
+    /* 추가적인 스타일링을 위한 클래스 */
+    /* 예를 들어, 사용자 이름에 볼드 스타일을 적용하고 싶다면 */
+    .modalcomment_ul_1 li .username {
+        font-weight: bold;
+    }
+    
