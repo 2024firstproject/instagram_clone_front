@@ -13,7 +13,7 @@ function MainSide() {
             </div>
             <div className="suggtext">Suggestions for you</div>
             <div className="suggestion">
-                <div className="suggname">junyoung</div>
+                <div className="suggname">ojysns</div>
                 <div className="suggsub">suggestion for you</div>
                 <div className="suggpic"></div>
                 <div className="suggfollow">Follow</div>
