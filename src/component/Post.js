@@ -2,14 +2,15 @@ import React from "react";
 import Comment from "./Comment.js";
 import './PostComment.css'
 import './Post.css';
-import comments from '../image/comments.png';
 import share from '../image/share.png';
 import save from '../image/save.png';
 import options from '../image/options.png';
 import HeartButton from "./HeartButton.js";
 import Modal from './Modal.js';
 
+
 function Post(props) {
+
 
     return(
         <>
@@ -23,7 +24,6 @@ function Post(props) {
                 <img className='options' src={options}/>
                 <div className="posticon">
                     <HeartButton/>
-                    <img className='comments' src={comments}/>
                     <img className='share' src={share}/>
                     <img className='save' src={save}/>
                 </div>
