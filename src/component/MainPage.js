@@ -4,6 +4,7 @@ import Post from './Post.js';
 import MainSide from './MainSide.js';
 
 function MainPage() {
+
     return (
       <div className='main'>
         <Navbar />

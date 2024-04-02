@@ -8,6 +8,8 @@ import add from '../image/add.png';
 import trends from '../image/trends.png';
 import likes from '../image/likes.png';
 import Ellipse1 from '../image/Ellipse1.png';
+import { useNavigate } from "react-router-dom"
+import MainPage from './MainPage';
 
 function Navbar() {
     const [isInputFocused, setIsInputFocused] = useState(false);
@@ -20,6 +22,11 @@ function Navbar() {
         setIsInputFocused(false);
     };
 
+    const navigate = useNavigate();
+    
+    const goToMain = () =>{
+        navigate(<MainPage/>);
+    }
     return (
         <>
             <div className='Navbar'>
@@ -38,7 +45,7 @@ function Navbar() {
                     />
                 </div>
                 <div className='Navicon'>
-                    <img className='homeactive' src={homeactive}/>
+                    <img className='homeactive' src={homeactive} onClick={goToMain}/>
                     <img className='msg' src={msg}/>
                     <img className='add' src={add}/>
                     <img className='trends' src={trends}/>
