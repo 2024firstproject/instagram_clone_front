@@ -8,18 +8,17 @@ import options from '../image/options.png';
 import HeartButton from "./HeartButton.js";
 import Modal from './Modal.js';
 
-
 function Post(props) {
-
+    const { postName, textName, postText} = props;
 
     return(
         <>
             <div className="postbackground">
             </div>
-            <Modal />
+            <Modal comcount="10"/>
             <div className="postElement">
                 <div className="postprofile"></div>
-                <div className="postname">doong_yi_nuna</div>
+                <div className="postname">{postName}</div>
                 <div className="postpic"></div>
                 <img className='options' src={options}/>
                 <div className="posticon">
@@ -28,10 +27,10 @@ function Post(props) {
                     <img className='save' src={save}/>
                 </div>
                 <div className="posttext">
-                    <div className="textname">doong_yi_nuna</div>
-                    <div className="text">hello my friends!</div>
+                    <div className="textname">{textName}</div>
+                    <div className="text">{postText}</div>
                 </div>
-                <Comment />
+                <Comment commentName="doong_yi_nuna" />
             </div>
         </>
     );
