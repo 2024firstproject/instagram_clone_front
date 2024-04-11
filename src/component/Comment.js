@@ -11,7 +11,7 @@ function Comment(props) {
         if (comment === '') {
             return;
         }
-        const userName = 'doong_yi_nuna'; // 사전에 설정된 이름
+        const userName = props.commentName; // 사전에 설정된 이름
         const newComment = { name: userName, text: comment }; // 사용자 이름과 댓글을 객체로 생성
         setCommentArray(commentValueList => [newComment, ...commentValueList]);
         setComment('');

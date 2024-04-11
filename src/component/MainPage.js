@@ -10,7 +10,7 @@ function MainPage() {
         <Navbar />
         <div className='body'>
           <StoryPage />
-          <Post />
+          <Post postName="doong_yi_nuna" textName="doong_yi_nuna" postText="nice to meet you" />
           <MainSide />
         </div>
       </div>

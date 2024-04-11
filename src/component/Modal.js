@@ -5,7 +5,7 @@ import ModalComment from "./ModalComment.js";
 import './ModalComment.css';
 import comments from '../image/comments.png';
 
-function Modal() {
+function Modal({comcount}) {
   const [modalOpen, setModalOpen] = useState(false);
 
   // 모달을 열기 위한 함수
@@ -21,7 +21,7 @@ function Modal() {
   return (
     <>
       <div className="commentcount" onClick={openModal}>
-        댓글 5개 모두 보기
+        댓글 {comcount}개 모두 보기
       </div>
       <img className='comments' src={comments} onClick={openModal}/>
       {modalOpen && (
